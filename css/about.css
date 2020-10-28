@@ -138,6 +138,7 @@ p {
 
 .yelp-review {
 	width: 100%;
+	overflow-x: hidden;
 }
 
 
@@ -246,18 +247,19 @@ footer {
     margin: 0 43%;
   }
 
-/* DESKTOP MAIN CONTENT */
+	/* DESKTOP MAIN CONTENT */
 
-main {
-	margin-top: 151px;
-}
+	main {
+		margin-top: 151px;
+	}
 
-figure {
-	float: left;
-	margin: 0;
-	width: 40%;
-	padding-right: 3%;
-}
+	figure {
+		float: left;
+		margin: 0;
+		width: 40%;
+		padding-right: 3%;
+	}
+
 
 
   /* DESKTOP FOOTER */
@@ -289,6 +291,15 @@ figure {
 }
 
 
+/**************MIN-WIDTH 850PX MEDIA QUERY***********/
+
+@media (min-width: 850px) {
+
+	.yelp {
+		margin-left: 10%;
+	}
+}
+
 /**************MIN-WIDTH 1000PX MEDIA QUERY***********/
 
 @media (min-width: 1000px) {
@@ -301,11 +312,11 @@ figure {
 	article {
 		float: right;
 		width: 57%;
+		padding-bottom: 5%;
 	}
 
 	.yelp {
-		clear:both;
-		display: flex;
+		margin-left: 15%;
 	}
 
 }
@@ -316,5 +327,13 @@ figure {
   .desktop-menu h3 {
     padding: 89px;
   }
+
+	.yelp {
+		display: flex;
+		flex-direction: row;
+		margin: auto;
+		clear: both;
+		justify-content: space-between;
+	}
 
 }
