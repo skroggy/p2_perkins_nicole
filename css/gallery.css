@@ -1,0 +1,366 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display:block;
+}
+
+/* font-family: brush-atf, sans-serif;
+   font-weight: 300;
+   font-style: normal;
+
+   font-family: bebas-neue-pro, sans-serif;
+   font-weight: 300;
+   font-style: normal;
+
+   font-family: bebas-neue-pro, sans-serif;
+   font-weight: 600;
+   font-style: normal; */
+
+body {
+	background-color: #000000;
+  font-family: bebas-neue-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+main {
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+}
+
+h1 {
+  font-family: brush-atf, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h2, h3, {
+  font-family: bebas-neue-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+h4 {
+  font-family: bebas-neue-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+	font-size: 16px;
+	padding: 2% 0;
+}
+
+.desktop-menu, .desktop-footer {
+	display: none;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu {
+  overflow: hidden;
+  background-color: #000000;
+  position: relative;
+  text-align: center;
+}
+
+.mobile-menu #links {
+  display: none;
+}
+
+.mobile-menu a {
+  color: #ffffff;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  transition: hover .5s ease-in-out;
+   -moz-transition: hover .5s ease-in-out;
+   -webkit-transition: hover .5s ease-in-out;
+}
+
+.mobile-menu a.icon {
+  background: #000000;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.link:hover {
+  background-color: #ffffff;
+  color: black;
+  transition: 0.5s;
+}
+
+.logo {
+  padding: 15px;
+}
+
+/* MAIN CONTENT */
+
+#main {
+	padding: 6%;
+	margin: 0 auto;
+}
+
+.about-content {
+	padding-bottom: 6%;
+}
+
+figure {
+	padding-bottom: 6%;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+/* MOBILE FOOTER */
+
+footer {
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	padding: 20px;
+  height: 85px;
+	clear: both;
+}
+
+.address {
+  text-align: left;
+  float: left;
+}
+
+.social {
+  text-align: right;
+  float: right;
+	padding-right: 50px;
+  padding-top: 30px;
+}
+
+.social li {
+  display: inline;
+}
+
+.social img {
+  width: 25px;
+  transition: width .5s ease-in-out;
+   -moz-transition: width  .5s ease-in-out;
+   -webkit-transition: width  .5s ease-in-out;
+}
+
+.social img:hover {
+  width: 30px;
+  transition: 0.5s;
+}
+
+
+/**************MIN-WIDTH 600PX MEDIA QUERY***********/
+
+/* MAIN CONTENT */
+
+@media (min-width: 600px) {
+
+	#main {
+		max-width: 1050px;
+	}
+}
+
+
+/**************MIN-WIDTH 800PX MEDIA QUERY***********/
+
+/* DESKTOP MENU */
+
+@media (min-width: 800px) {
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: block;
+    background-color: #000000;
+    text-align: center;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+
+  .desktop-menu a {
+    color: #ffffff;
+		letter-spacing: 2px;
+    transition: color .5s ease-in-out;
+     -moz-transition: color .5s ease-in-out;
+     -webkit-transition: color .5s ease-in-out;
+  }
+
+  .desktop-menu a:hover {
+    color: #c1272d;
+    transition: 0.5s;
+  }
+
+  .desktop-menu h3 {
+    display: inline;
+    padding: 50px;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 43%;
+  }
+
+	/* DESKTOP MAIN CONTENT */
+
+	main {
+		margin-top: 151px;
+	}
+
+  /* DESKTOP FOOTER */
+
+  .mobile-footer {
+    display: none;
+  }
+
+
+  .desktop-footer {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 30px 0;
+  }
+
+	.desktop-footer img {
+    width: 20px;
+    padding: 10px;
+		transition: width .5s ease-in-out;
+	   -moz-transition: width  .5s ease-in-out;
+	   -webkit-transition: width  .5s ease-in-out;
+  }
+
+	.desktop-footer img:hover {
+		width: 25px;
+		transition: 0.5s;
+	}
+}
+
+
+/**************MIN-WIDTH 1000PX MEDIA QUERY***********/
+
+@media (min-width: 1000px) {
+  .desktop-menu h3 {
+    padding: 68px;
+	}
+
+
+
+/**************MIN-WIDTH 1200PX MEDIA QUERY***********/
+
+@media (min-width: 1200px) {
+  .desktop-menu h3 {
+    padding: 89px;
+  }
+
+}
