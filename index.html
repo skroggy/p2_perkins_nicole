@@ -8,6 +8,7 @@
 		<title>Akira Sushi Hibachi</title>
 
 		<link type="text/css" rel="stylesheet" href="css/index.css" />
+		<link type="text/css" rel="stylesheet" href="css/pageLoader.css" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,6 +25,16 @@
 	</head>
 
   <body>
+
+		<div class="o-page-loader">
+    <div class="o-page-loader--content">
+        <div class="o-page-loader--spinner"></div>
+        <div class="o-page-loader--message">
+            <span>Loading...</span>
+        </div>
+    </div>
+</div>
+
       <header>
 
         <div class="mobile-menu">
@@ -95,6 +106,7 @@
         </ul></h3>
       </footer>
 
+		<script src="java/pageLoader.js"></script>
 		<script src="java/main.js"></script>
 
   </body>
